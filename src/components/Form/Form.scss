@@ -1,0 +1,44 @@
+.form {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+}
+
+.form__select {
+  position: relative;
+
+  flex-shrink: 1;
+  flex-grow: 1;
+
+  select {
+    height: 50px;
+    padding-right: 50px;
+    color: var(--main-color);
+    background: #ffffff;
+    width: 100%;
+  }
+
+  &:hover .form__select-button {
+    background-color: var(--main-color);
+    color: #ffffff;
+  }
+}
+
+.form__select-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  pointer-events: none;
+
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}

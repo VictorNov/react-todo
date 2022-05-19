@@ -1,0 +1,44 @@
+.todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 50px;
+  height: max-content;
+
+  background-color: #fff;
+  color: #000;
+
+  padding: .5rem 10px .5rem 1rem;
+  margin-bottom: 1rem;
+
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -ms-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: .5;
+}
+
+.todo__item {
+  margin-right: auto;
+  font-size: 1.2rem;
+
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.todo__complete-btn {
+  color: var(--green);
+
+  &:hover {
+    background-color: var(--green);
+  }
+}
